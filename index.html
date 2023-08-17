@@ -19,8 +19,13 @@
     letter-spacing: -.01em;
     color: #14253f;
 }
+.message{
+    padding: 100px 0 85px;
+    background: #f8f9fa;
+    background-size: cover;
+}
 .landing-sc-page .main-screen {
-    padding: 135px 0 85px;
+/*    padding: 135px 0 85px; */
 /*    background: #f8f9fa url(../img_design/bg-form-main.svg) no-repeat top center;*/
     background: #f8f9fa;
     background-size: cover;
@@ -171,12 +176,12 @@
         width: 90%;
     }
 }
-/*
-.wrapper {
+
+.wrapper2 {
     width: 1170px;
-    margin: 0 auto;
+/*   margin: 0 auto; */
 }
-*/
+
 .img-wrap {
     margin: 70px auto 45px;
 }
@@ -200,10 +205,43 @@
 .loading-complete .loading-bar {
   background-color: #27ae60;
 }
+.card{
+    --tw-border-opacity: 1;
+    border-color: rgb(90 80 235/1);
+}
+.bg-slate-25 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(247 249 253/1);
+}
+.navbar-brand {
+    color: rgb(255 255 255 / 90%);
+}
 </style>
 </head>
 <body class="front__page">
+    <nav class="navbar navbar-light" style="background-color: #14253f;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <!--   <img src="/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">-->
+                   NoBrokenLinks
+            </a>
+        </div>
+    </nav>
 <main class="landing-sc-page">
+
+
+    <section class="message">
+        <div class="wrapper">
+            <div class="ontent-part__wrapper">
+                <div class="card bg-slate-25">
+                    
+                    <div class="card-body">
+                        <p> This tool is hosted in a free instance, it will spin down with inactivity. If you experience slowness is because its waking up. If you find this tool helpfull and want to contribute to make it faster you can make a small donation here!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="main-screen">
         <div class="wrapper">
             <div class="content-part__wrapper">

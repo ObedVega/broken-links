@@ -31,49 +31,36 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
     <style>
-      .navbar-brand {
-          color: rgb(255 255 255 / 90%);
+      .dropdown-menu[data-bs-popper] {
+        left: -100px;
       }
   </style>
 </head>
 
 <body class="front__page">
-    <nav class="navbar navbar-light" style="background-color: #14253f;">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <!--   <img src="/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">-->
-                   NoBrokenLinks
+  <nav class="navbar navbar-light" style="background-color: #14253f;">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            NoBrokenLinks
+        </a>
+        <div class="flex-shrink-0 dropdown">
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+            <a href="#" class="nav-link active d-block text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa fa-solid fa-globe"></i>
             </a>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                  </li>
-                </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-              </div>
+            <ul class="dropdown-menu text-small shadow">
+              <li><a class="dropdown-item" href="https://obedvega.github.io/broken-links/en/">English</a></li>
+              <li><a class="dropdown-item" href="https://obedvega.github.io/broken-links/es/">Español</a></li>
+              <li><a class="dropdown-item" href="https://obedvega.github.io/broken-links/ja/">日本</a></li>
+              <li><a class="dropdown-item" href="https://obedvega.github.io/broken-links/fr/">Français</a></li>
+              <li><a class="dropdown-item" href="https://obedvega.github.io/broken-links/cn/">中国</a></li>
+            </ul>
+            </li>
+          </ul>
         </div>
-    </nav>
+    </div>
+</nav>
 <main class="landing-sc-page">
     <section class="message">
         <div class="wrapper">

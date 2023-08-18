@@ -254,6 +254,3 @@ flex: 1;
 color:#5a50eb;
 font-weight: 600;
 }
-.dropdown-menu[data-bs-popper] {
-    left: -100px;
-}

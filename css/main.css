@@ -254,3 +254,8 @@ flex: 1;
 color:#5a50eb;
 font-weight: 600;
 }
+.mlink {
+    color: #5a50eb;
+    font-weight: 600;
+    text-decoration: none;
+}

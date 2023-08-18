@@ -167,15 +167,18 @@ border: none!important;
 outline: 0!important;
 }
 @media (max-width: 1250px){
-.wrapper {
-    width: 90%;
-}
-.audit__testCase {
-width: 100%;
-}
-.article__seo-search {
-width: 100%;
-}
+    .wrapper {
+        width: 90%;
+    }
+    .audit__testCase {
+    width: 100%;
+    }
+    .article__seo-search {
+    width: 100%;
+    }
+    .landing-sc-page .main-screen .audit__testCase .article__seo-search {
+        width: 100%;
+    }
 }
 
 .wrapper2 {
@@ -250,4 +253,7 @@ flex: 1;
 .nav-link {
 color:#5a50eb;
 font-weight: 600;
+}
+.dropdown-menu[data-bs-popper] {
+    left: -100px;
 }

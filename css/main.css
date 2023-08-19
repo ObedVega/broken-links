@@ -104,7 +104,7 @@ cursor: pointer;
 width: 630px;
 height: 52px;
 border-radius: 6px;
-border: 2px solid #14253f;
+border: 2px solid #5a50eb;
 padding: 0;
 box-shadow: 0 8px 20px rgba(0,0,0,.04);
 }
@@ -125,7 +125,7 @@ font-size: 15px;
 line-height: 24px;
 width: auto;
 min-width: 208px;
-background: #14253f;
+background: #5a50eb;
 border-radius: 0 6px 6px 0;
 padding: 0 31px;
 text-align: center;
@@ -258,4 +258,10 @@ font-weight: 600;
     color: #5a50eb;
     font-weight: 600;
     text-decoration: none;
+}
+.show{
+    display: none;
+}
+.show1{
+    display: none;
 }

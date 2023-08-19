@@ -82,29 +82,27 @@
                 <h1 class="page-title">A broken link on your website can negatively affect user experience and SEO.</h1>
                 <h3 class="page-desc">Regularly checking and fixing broken links is important for maintaining a positive user experience and preserving your site's search engine ranking.</h3>
                 <div class="audit__testCase">
-                    <form id="audit__form" class="article__seo-search audit__form free-trial-form" action="" method="POST">
+                    <div id="audit__form" class="article__seo-search audit__form free-trial-form" action="">
                         <span class="error"></span>
                         <label for="siteAuditForm" class="sr-only">Domain entry form for site analysis.</label>
                         <input id="siteAuditForm" name="url" type="text" placeholder="Enter your domain">
-                        <button type="submit">
+                        <button type="submit" onclick="postData()">
                             <span>Look for Broken Links</span>
                             <span></span>
                             <!--<img src="https://sitechecker.pro/wp-content/themes/sitechecker/out/img_design/loading.svg" width="31" height="30" alt="seositecheckup loading process" class="loading">-->
                         </button>
-                    </form>
+                      </div>
                 </div>
             </div>
             <div></div>
             <div class="img-wrap">
-             
-                    <div class="loading-container">
-                        <div class="loading-bar" id="progress-bar"></div>
-                      </div>
-              
+              <div class="loading-container show" id="bar">
+                <div class="loading-bar show" id="progress-bar"></div>
+              </div>
             </div>
         </div>
     </section>
-    <section class="results">
+    <section class="results show1">
         <div class="wrapper">
             <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
@@ -175,6 +173,11 @@
         </div>
     </section>
 </main>
+<footer class="footer mt-auto py-3 bg-light">
+  <div class="container">
+    <span class="text-muted">Place sticky footer content here.</span>
+  </div>
+</footer>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
 <script src="https://getbootstrap.com/docs/5.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -190,15 +193,20 @@
           width++;
           progressBar.style.width = width + "%";
         }
-      }, 30); // Adjust the speed of the progress here
+      }, 100); // Adjust the speed of the progress here
     }
 
-    window.onload = startLoading;
+  //  window.onload = 
 
-    var firstTabEl = document.querySelector('#myTab li:frist-child button')
-  var firstTab = new bootstrap.Tab(firstTabEl)
+    function postData() {
+    //  alert('test');
+      var progressBar1 = document.getElementById("bar");
+      var progressBar2 = document.getElementById("progress-bar");
+      progressBar1.classList.remove("show");
+      progressBar2.classList.remove("show");
 
-  firstTab.show()
+      startLoading();
+    }
   </script>
 </body>
 </html>

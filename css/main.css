@@ -79,7 +79,7 @@ text-align: left;
 border: none;
 position: relative;
 z-index: 2;
-color: #313135;
+color: #5a50eb;
 }
 .article__seo-search button {
 background: #06f;
@@ -264,4 +264,7 @@ font-weight: 600;
 }
 .show1{
     display: none;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: #5a50eb;
 }

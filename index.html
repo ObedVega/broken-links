@@ -85,7 +85,7 @@
                     <div id="audit__form" class="article__seo-search audit__form free-trial-form" action="">
                         <span class="error"></span>
                         <label for="siteAuditForm" class="sr-only">Domain entry form for site analysis.</label>
-                        <input id="siteAuditForm" name="url" type="text" placeholder="Enter your domain">
+                        <input id="siteAuditForm" name="url" type="text" placeholder="Enter your domain" required>
                         <button type="submit" onclick="postData()">
                             <span>Look for Broken Links</span>
                             <span></span>
@@ -200,12 +200,18 @@
 
     function postData() {
     //  alert('test');
-      var progressBar1 = document.getElementById("bar");
-      var progressBar2 = document.getElementById("progress-bar");
-      progressBar1.classList.remove("show");
-      progressBar2.classList.remove("show");
+      var input = document.getElementById("siteAuditForm").value;
+      //alert(input);
+      if(input!==""){
+        var progressBar1 = document.getElementById("bar");
+        var progressBar2 = document.getElementById("progress-bar");
+        progressBar1.classList.remove("show");
+        progressBar2.classList.remove("show");
 
-      startLoading();
+        startLoading();
+      }else{
+      //  alert('input vacio');
+      }     
     }
   </script>
 </body>

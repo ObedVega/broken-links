@@ -83,16 +83,16 @@
                 <h1 class="page-title">您网站上的损坏链接可能会对用户体验和 SEO 产生负面影响</h1>
                 <h3 class="page-desc">定期检查和修复损坏的链接对于保持积极的用户体验和保持网站的搜索引擎排名非常重要</h3>
                 <div class="audit__testCase">
-                    <form id="audit__form" class="article__seo-search audit__form free-trial-form" action="" method="POST">
+                    <div id="audit__form" class="article__seo-search audit__form free-trial-form" action="" method="POST">
                         <span class="error"></span>
                         <label for="siteAuditForm" class="sr-only">用于站点分析的域输入表格。</label>
                         <input id="siteAuditForm" name="url" type="text" placeholder="输入您的域名">
-                        <button type="submit">
+                        <button type="submit" onclick="postData()">
                             <span>寻找损坏的链接</span>
                             <span></span>
                             <!--<img src="https://sitechecker.pro/wp-content/themes/sitechecker/out/img_design/loading.svg" width="31" height="30" alt="seositecheckup loading process" class="loading">-->
                         </button>
-                    </form>
+                    </div>
                 </div>
             </div>
             <div class="page-desc show0" id="message">

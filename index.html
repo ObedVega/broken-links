@@ -183,41 +183,7 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
 <script src="https://getbootstrap.com/docs/5.3/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-    function startLoading() {
-      var progressBar = document.getElementById("progress-bar");
-      var width = 0;
-      var interval = setInterval(function() {
-        if (width >= 100) {
-          clearInterval(interval);
-          progressBar.classList.add("loading-complete");
-        } else {
-          width++;
-          progressBar.style.width = width + "%";
-        }
-      }, 100); // Adjust the speed of the progress here
-    }
-s
-  //  window.onload = 
+<script src="js/scripts.js"></script>
 
-    function postData() {
-    //  alert('test');
-      var mensaje = document.getElementById("message");
-      var input = document.getElementById("siteAuditForm").value;
-      //alert(input);
-      if(input!==""){
-        var progressBar1 = document.getElementById("bar");
-        var progressBar2 = document.getElementById("progress-bar");
-        progressBar1.classList.remove("show");
-        progressBar2.classList.remove("show");
-        mensaje.classList.add("show0");
-
-        startLoading();
-      }else{
-        mensaje.classList.remove("show0");
-      //  alert('input vacio');
-      }     
-    }
-  </script>
 </body>
 </html>

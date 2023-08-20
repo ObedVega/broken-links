@@ -22,9 +22,11 @@ s
     if(input!==""){
       var progressBar1 = document.getElementById("bar");
       var progressBar2 = document.getElementById("progress-bar");
+      var result = document.getElementById("results");
       progressBar1.classList.remove("show");
       progressBar2.classList.remove("show");
       mensaje.classList.add("show0");
+      result.classList.remove("show1");
 
       startLoading();
     }else{

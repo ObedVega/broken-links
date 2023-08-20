@@ -84,16 +84,16 @@
                 <h1 class="page-title">Un lien brisé sur votre site Web peut affecter négativement l'expérience utilisateur et le SEO.</h1>
                 <h3 class="page-desc">Il est important de vérifier et de réparer régulièrement les liens brisés pour maintenir une expérience utilisateur positive et préserver le classement de votre site dans les moteurs de recherche.</h3>
                 <div class="audit__testCase">
-                    <form id="audit__form" class="article__seo-search audit__form free-trial-form" action="" method="POST">
+                    <div id="audit__form" class="article__seo-search audit__form free-trial-form" action="" method="POST">
                         <span class="error"></span>
                         <label for="siteAuditForm" class="sr-only">Formulaire d'entrée de domaine pour l'analyse du site.</label>
                         <input id="siteAuditForm" name="url" type="text" placeholder="Entrez votre domaine">
-                        <button type="submit">
+                        <button type="submit" onclick="postData()">
                             <span>Rechercher les liens brisés</span>
                             <span></span>
                             <!--<img src="https://sitechecker.pro/wp-content/themes/sitechecker/out/img_design/loading.svg" width="31" height="30" alt="seositecheckup loading process" class="loading">-->
                         </button>
-                    </form>
+                    </div>
                 </div>
             </div>
             <div class="page-desc show0" id="message">

@@ -194,6 +194,9 @@ outline: 0!important;
 .textrs{
     font-size: 10px;
 }
+.textbutton{
+    display: none;
+}
 }
 
 .wrapper2 {

@@ -277,19 +277,19 @@ font-weight: 600;
     font-weight: 600;
     text-decoration: none;
 }
-.show{
+.s2{
     display: none;
 }
-.show0{
+.s0{
     display: none;
 }
-.show1{
+.s1{
     display: none;
-}
+}/*
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     background-color: #5a50eb;
 }
-
+*/
 /*Loader*/
 .loader {
     border: 6px solid #f3f3f3;

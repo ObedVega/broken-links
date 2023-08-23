@@ -29,16 +29,16 @@ async function startLoading() {
       var progressBar1 = document.getElementById("bar");
       var progressBar2 = document.getElementById("progress-bar");
       var result = document.getElementById("results");
-      progressBar1.classList.remove("show");
-      progressBar2.classList.remove("show");
-      mensaje.classList.add("show0");
+      progressBar1.classList.remove("s2");
+      progressBar2.classList.remove("s2");
+      mensaje.classList.add("s0");
     
 
       await startLoading();
       
       await getData(result, url);
     }else{
-      mensaje.classList.remove("show0");
+      mensaje.classList.remove("s0");
     //  alert('input vacio');
     }     
   }
@@ -51,7 +51,7 @@ async function startLoading() {
   }
   
   async function getData(result, url){
-    result.classList.remove("show1");
+    result.classList.remove("s1");
     await showLoader();
   //  alert(url);
   //  url = 'https://jsonplaceholder.typicode.com/users';

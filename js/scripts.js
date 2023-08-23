@@ -66,6 +66,7 @@ async function startLoading() {
       let issue = 'View issue'
       let resultado = data;
       let listGroup = document.getElementById("resultados");
+      alert(lan);
       if (lan==='ja'){
         issue = '問題を見る';
       }

@@ -55,22 +55,23 @@ async function startLoading() {
     await showLoader();
   //  alert(url);
   //  url = 'https://jsonplaceholder.typicode.com/users';
-    fetch(url)
+    let api = `https://django-wv7q.onrender.com/api/check/${url}/`
+    fetch(api)
     .then((response) => {
     //  console.log(response);
       return response.json();
     })
     .then((data) => {
       hideLoader();
-      let authors = data;
+      let resultado = data;
       let listGroup = document.getElementById("resultados");
 
-      let listItems = authors.map(author => {
-        let { name, email } = author;
+      let listItems = resultado.map(res => {
+        let { nombre } = res;
         return `
           <li class="list-group-item listext">
             <span class="reddot"></span>
-            <span class="textrs">${name}</span>
+            <span class="textrs">${nombre}</span>
             <span class="flex-spacer"></span>
             <button type="button" class="btn btn-outline-danger" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">

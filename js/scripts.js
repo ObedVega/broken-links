@@ -33,11 +33,11 @@ async function startLoading() {
       progressBar1.classList.remove("s2");
       progressBar2.classList.remove("s2");
       mensaje.classList.add("s0");
-    
+      var linkWithoutProtocol = url.replace("https://", "");
 
       await startLoading();
       mensaje2.classList.remove("s3");
-      await getData(result, url, lan);
+      await getData(result, linkWithoutProtocol, lan);
     }else{
       mensaje.classList.remove("s0");
     //  alert('input vacio');
@@ -55,9 +55,7 @@ async function startLoading() {
     result.classList.remove("s1");
     await showLoader();
 
-    var linkWithoutProtocol = url.replace("https://", "");
-
-    let api = `https://django-wv7q.onrender.com/api/check/${linkWithoutProtocol}/`
+    let api = `https://django-wv7q.onrender.com/api/check/${url}/`
     fetch(api)
     .then((response) => {
     //  console.log(response);

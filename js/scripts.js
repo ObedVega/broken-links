@@ -59,18 +59,35 @@ async function startLoading() {
     let api = `https://django-wv7q.onrender.com/api/check/${url}/`
     fetch(api)
     .then((response) => {
-    //  console.log(response);
+      console.log(response);
       return response.json();
     })
     .then((data) => {
       hideLoader();
-      let issue = 'View issue'
+      let issue = '';
       let resultado = data;
       let listGroup = document.getElementById("resultados");
     //  alert(lan);
+    switch (lan) {
+      case 'ja':
+        issue = '問題を見る';
+        break;
+      case 'fr':
+        issue = 'Afficher le problème';
+        break;
+      case 'es':
+        issue = 'Ver problema';
+        break;
+      case 'cn':
+        issue = '查看问题';
+        break;
+      default:
+        issue = 'View issue'
+    }
+    /*
       if (lan==='ja'){
         issue = '問題を見る';
-      }
+      }*/
       let listItems = resultado.map(res => {
         let { ruta, status } = res;
       //  if (res.status !== '0'){

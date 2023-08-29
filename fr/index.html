@@ -94,20 +94,25 @@
                         <span class="error"></span>
                         <label for="siteAuditForm" class="sr-only">Formulaire d'entrée de domaine pour l'analyse du site.</label>
                         <input id="siteAuditForm" name="url" type="text" placeholder="Entrez votre domaine">
-                        <button type="submit" onclick="postData()">
+                        <button type="submit" onclick="postData('fr')">
                             <span>Rechercher les liens brisés</span>
                             <span></span>
-                            <!--<img src="https://sitechecker.pro/wp-content/themes/sitechecker/out/img_design/loading.svg" width="31" height="30" alt="seositecheckup loading process" class="loading">-->
                         </button>
                     </div>
                 </div>
             </div>
-            <div class="page-desc show0" id="message">
+            <div class="page-desc s0" id="message">
               <span class="mlink">Veuillez introduire votre URL</span>
             </div>
             <div class="img-wrap">
-              <div class="loading-container show" id="bar">
-                <div class="loading-bar show" id="progress-bar"></div>
+              <div class="loading-container s2" id="bar">
+                <div class="loading-bar s2" id="progress-bar"></div>
+              </div>
+            </div>
+            <div class="wrapper">
+              <div class="page-desc s3" id="m2">
+                <span class="mlink">We are reviewing all the links found in the URL</span>
+                <span class="mlink">Cela peut prendre quelques secondes.</span>
               </div>
             </div>
         </div>

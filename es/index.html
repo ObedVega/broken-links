@@ -95,7 +95,7 @@
                         <span class="error"></span>
                         <label for="siteAuditForm" class="sr-only">Analiza tu sitio</label>
                         <input id="siteAuditForm" name="url" type="text" placeholder="Analiza tu sitio">
-                        <button type="submit" onclick="postData()">
+                        <button type="submit" onclick="postData('es')">
                             <span>Buscar Broken Links</span>
                             <span></span>
                             <!--<img src="https://sitechecker.pro/wp-content/themes/sitechecker/out/img_design/loading.svg" width="31" height="30" alt="seositecheckup loading process" class="loading">-->
@@ -103,17 +103,17 @@
                     </div>
                 </div>
             </div>
-            <div class="page-desc show0" id="message">
+            <div class="page-desc s0" id="message">
               <span class="mlink">Introduce tu URL</span>
             </div>
             <div class="img-wrap">
-              <div class="loading-container show" id="bar">
-                <div class="loading-bar show" id="progress-bar"></div>
+              <div class="loading-container s2" id="bar">
+                <div class="loading-bar s2" id="progress-bar"></div>
               </div>
             </div>
         </div>
     </section>
-    <section class="results show1" id="results">
+    <section class="results s1" id="results">
         <div class="wrapper">
             <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
@@ -139,31 +139,9 @@
               </ul>
               
               <div class="tab-content">
+                <div id="loader" class="loader"></div>
                 <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                    <ul class="list-group">
-                        <li class="list-group-item listext">
-                            <span class="reddot"></span>
-                            https://quickstarts.teradata.com/tools-and-utilities/run-bulkloads-efficiently-with-teradata-parallel-transporter.html
-                            <span class="flex-spacer "></span>
-                            <button type="button" class="btn btn-outline-danger" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
-                                </svg>
-                                Ver error
-                            </button>
-                        </li>
-                        <li class="list-group-item listext">
-                            <span class="reddot"></span>
-                            https://quickstarts.teradata.com/tools-and-utilities/run-bulkloads-efficiently-with-teradata-parallel-transporter.htmlx
-                            <span class="flex-spacer "></span>
-                            <button type="button" class="btn btn-outline-danger" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
-                                </svg>
-                                Ver error
-                            </button>
-                        </li>
-                      </ul>
+                    <ul class="list-group" id="resultados"></ul>
                 </div>
                 <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                     <div class="alert alert-warning" role="alert">

@@ -55,6 +55,7 @@ async function startLoading() {
     result.classList.remove("s1");
     await showLoader();
 
+//    let api = `http://localhost:8000/api/check/${url}/`
     let api = `https://django-wv7q.onrender.com/api/check/${url}/`
     fetch(api)
     .then((response) => {
@@ -91,6 +92,6 @@ async function startLoading() {
     })
     .catch(error => {
       hideLoader();
-      console.error('Error:', error);
+      console.error(error);
     });
   }

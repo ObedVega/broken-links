@@ -72,11 +72,17 @@ async function startLoading() {
         issue = '問題を見る';
       }
       let listItems = resultado.map(res => {
-        let { ruta } = res;
+        let { ruta, status } = res;
+      //  if (res.status !== '0'){
+      //    if(lan==='ja'){
+      //      ruta = '壊れたリンクは見つかりませんでした';
+      //    }
+      //  }
         return `
           <li class="list-group-item listext">
             <span class="reddot"></span>
-            <span class="textrs"><a href="${ruta}">${ruta}</a></span>
+            <span class="flex-spacer textrs"><a href="${ruta}">${ruta}</a></span>
+            <span class="mlink">${status}</span>
             <span class="flex-spacer"></span>
             <button type="button" class="btn btn-outline-danger" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">

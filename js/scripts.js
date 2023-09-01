@@ -56,7 +56,8 @@ async function startLoading() {
     await showLoader();
 
 //    let api = `http://localhost:8000/api/check/${url}/`
-    let api = `https://django-wv7q.onrender.com/api/check/${url}/`
+//    let api = `https://django-wv7q.onrender.com/api/check/${url}/`
+    let api = `https://api.bustedweb.me/check/${url}/`
     fetch(api)
     .then((response) => {
       console.log(response);

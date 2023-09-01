@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=*">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="sitedomain" content="www.bustedweb.com">
+    <meta name="author" content="Obed Vega Soto">
+    <meta name="rating" content="General"> 
+    <meta name="classification" content="SEO, Broken Links Checker for Free, Software"> 
+    <meta name="revisit-after" content="5 days"> 
+    <meta name="distribution" content="Global"> 
+    <meta name="robots" content="INDEX,FOLLOW"> 
+    <meta name="abstract" content="SEO, Broken Links Checker for Free"> 
+    <meta name="designer" content="Obed Vega Soto"> 
+    <meta name="publisher" content="SEO, Broken Links Checker for Free">
+    <meta name="copyright" content="© bustedweb.com 2023. All rights reserved."> 
+    <meta name="organization" content="bustedweb.com"> 
+
+    <link rel="alternate" hreflang="en" href="https://obedvega.github.io/broken-links/">
+    <link rel="alternate" hreflang="fr" href="https://obedvega.github.io/broken-links/fr/">
+    <link rel="alternate" hreflang="es" href="https://obedvega.github.io/broken-links/es/">
+    <link rel="alternate" hreflang="cn" href="https://obedvega.github.io/broken-links/cn/">
+    <link rel="alternate" hreflang="ja" href="https://obedvega.github.io/broken-links/ja/">
+    <link rel="alternate" hreflang="x-default" href="https://obedvega.github.io/broken-links/">
+
+
+    <!-- Primary Meta Tags -->
+    <title>Busted Web — Free Broken Link Checker</title>
+    <meta name="title" content="Busted Web — Free Broken Link Checker" />
+    <meta name="description" content="A broken link on your website can negatively affect user experience and SEO." />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://obedvega.github.io/broken-links/">
+    <meta property="og:title" content="Busted Web — Free Broken Link Checker" />
+    <meta property="og:description" content="A broken link on your website can negatively affect user experience and SEO." />
+    <meta property="og:image" content="https://raw.githubusercontent.com/ObedVega/broken-links/main/img/logo.jpg" />
+    <meta property="og:image:width" content="540" />
+    <meta property="og:image:height" content="336" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://obedvega.github.io/broken-links/">
+    <meta property="twitter:title" content="Busted Web — Free Broken Link Checker" />
+    <meta property="twitter:description" content="A broken link on your website can negatively affect user experience and SEO." />
+    <meta property="twitter:image" content="https://raw.githubusercontent.com/ObedVega/broken-links/main/img/logo.jpg" />
+    
+    <link href="https://getbootstrap.com/docs/5.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+ 
+    <style>
+      .dropdown-menu[data-bs-popper] {
+        left: -100px;
+      }
+    </style>
+  </head>
+<body class="front__page">
+
+<main class="landing-sc-page">
+    <section class="message">
+        <div class="wrapper">
+            <div class="ontent-part__wrapper">
+
+            </div>
+        </div>
+    </section>
+    <section class="main-screen">
+        <div class="wrapper">
+            <div class="content-part__wrapper">
+                <h1 class="page-title">A broken link on your website can negatively affect user experience and SEO.</h1>
+                <h3 class="page-desc">Regularly checking and fixing broken links is important for maintaining a positive user experience and preserving your site's search engine ranking.</h3>
+                <div class="audit__testCase">
+                    <div id="audit__form" class="article__seo-search audit__form free-trial-form" action="">
+                        <span class="error"></span>
+                        <label for="siteAuditForm" class="sr-only">Domain entry form for site analysis.</label>
+                        <input id="siteAuditForm" name="url" type="text" placeholder="Enter your domain" required>
+                        <button type="submit" onclick="postData('en')">
+                            <span>Look for Broken Links</span>
+                            <span></span>
+                        </button>
+                      </div>
+                </div>
+            </div>
+            <div class="page-desc s0" id="message">
+              <span class="mlink">Please introduce you URL</span>
+            </div>
+            <div class="img-wrap">
+              <div class="loading-container s2" id="bar">
+                <div class="loading-bar s2" id="progress-bar"></div>
+              </div>
+            </div>
+        </div>
+        <div class="wrapper">
+          <div class="page-desc s3" id="m2">
+            <span class="mlink">We are reviewing all the links found in the URL.</span>
+            <span class="mlink">This might take a few seconds.</span>
+          </div>
+        </div>
+    </section>
+
+    <section class="results s1" id="results">
+        <div class="wrapper">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">
+                    Broken Links
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">
+                    Total Links
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="messages-tab" data-bs-toggle="tab" data-bs-target="#messages" type="button" role="tab" aria-controls="messages" aria-selected="false">
+                    Link Types
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="settings-tab" data-bs-toggle="tab" data-bs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">
+                    Issue Types
+                  </button>
+                </li>
+              </ul>
+              
+              <div class="tab-content">
+                <div id="loader" class="loader"></div>
+                <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <ul class="list-group" id="resultados"></ul>
+                </div>
+                <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="alert alert-warning" role="alert">
+                        This results are not available for you at the moments!
+                    </div>
+                </div>
+                <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">
+                    <div class="alert alert-warning" role="alert">
+                        This results are not available for you at the moments!
+                    </div>
+                </div>
+                <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+                    <div class="alert alert-warning" role="alert">
+                        This results are not available for you at the moments!
+                    </div>
+                </div>
+              </div>
+        </div>
+    </section>
+</main>
+
+<script src="js/scripts.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+<script src="https://getbootstrap.com/docs/5.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>

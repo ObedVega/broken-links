@@ -311,3 +311,8 @@ font-weight: 600;
     100% { transform: rotate(360deg); }
   }
 /*Loader*/
+
+
+.ocolor{
+    background-color: #eb6050;
+}

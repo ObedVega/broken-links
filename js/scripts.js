@@ -82,6 +82,12 @@ async function startLoading() {
       case 'cn':
         issue = '查看问题';
         break;
+      case 'de':
+          issue = 'Problem anzeigen';
+          break;
+      case 'kr':
+            issue = '이슈 보기';
+            break;        
       default:
         issue = 'View issue'
     }

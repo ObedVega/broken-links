@@ -7,13 +7,13 @@
     <meta name="sitedomain" content="www.bustedweb.me">
     <meta name="author" content="Obed Vega Soto">
     <meta name="rating" content="General"> 
-    <meta name="classification" content="SEO, Broken Links Checker for Free, Software"> 
+    <meta name="classification" content="SEO, Broken Links Checker for Free, Software, Image Analyzer for Free"> 
     <meta name="revisit-after" content="5 days"> 
     <meta name="distribution" content="Global"> 
     <meta name="robots" content="INDEX,FOLLOW"> 
-    <meta name="abstract" content="SEO, Broken Links Checker for Free"> 
+    <meta name="abstract" content="SEO, Broken Links Checker for Free, Image Analyzer for Free, Image Analyzer for Free"> 
     <meta name="designer" content="Obed Vega Soto"> 
-    <meta name="publisher" content="SEO, Broken Links Checker for Free">
+    <meta name="publisher" content="SEO, Broken Links Checker for Free, ">
     <meta name="copyright" content="© bustedweb.me 2023. All rights reserved."> 
     <meta name="organization" content="bustedweb.me"> 
     <!-- Google tag (gtag.js) -->
@@ -38,17 +38,18 @@
     <!--Icon-->
     <link rel="icon" type="image" href="https://raw.githubusercontent.com/ObedVega/broken-links/main/img/bw.jpg" sizes="16x16">
     <link rel="icon" type="image" href="https://raw.githubusercontent.com/ObedVega/broken-links/main/img/bw.jpg" sizes="32x32">    
+    <link rel="icon" href="https://raw.githubusercontent.com/ObedVega/broken-links/main/img/bw.jpg" type="image/x-icon">
 
     <!-- Primary Meta Tags -->
-    <title>Busted Web — Free Broken Link Checker</title>
-    <meta name="title" content="Busted Web — Free Broken Link Checker" />
-    <meta name="description" content="A broken link on your website can negatively affect user experience and SEO." />
+    <title>Busted Web — Free Image Analyzer</title>
+    <meta name="title" content="Busted Web — Free Image Analyzer" />
+    <meta name="description" content="Images without proper attributes negative SEO effects on your website." />
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.bustedweb.me/">
-    <meta property="og:title" content="Busted Web — Free Broken Link Checker" />
-    <meta property="og:description" content="A broken link on your website can negatively affect user experience and SEO." />
+    <meta property="og:title" content="Busted Web — Free Image Analyzer" />
+    <meta property="og:description" content="Images without proper attributes negative SEO effects on your website." />
     <meta property="og:image" content="https://raw.githubusercontent.com/ObedVega/broken-links/main/img/logo.jpg" />
     <meta property="og:image:width" content="540" />
     <meta property="og:image:height" content="336" />
@@ -56,8 +57,8 @@
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://www.bustedweb.me/">
-    <meta property="twitter:title" content="Busted Web — Free Broken Link Checker" />
-    <meta property="twitter:description" content="A broken link on your website can negatively affect user experience and SEO." />
+    <meta property="twitter:title" content="Busted Web — Free Image Analyzer" />
+    <meta property="twitter:description" content="Images without proper attributes negative SEO effects on your website." />
     <meta property="twitter:image" content="https://raw.githubusercontent.com/ObedVega/broken-links/main/img/logo.jpg" />
     
     <link href="https://getbootstrap.com/docs/5.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -114,15 +115,17 @@
     <section class="main-screen">
         <div class="wrapper">
             <div class="content-part__wrapper">
-                <h1 class="page-title">A broken link on your website can negatively affect user experience and SEO.</h1>
-                <h3 class="page-desc">Regularly checking and fixing broken links is important for maintaining a positive user experience and preserving your site's search engine ranking.</h3>
+                <h1 class="page-title">Images without proper attributes negative SEO effects on your website.</h1>
+                <h3 class="page-desc">
+                  Elevate your website's accessibility and SEO performance by using the Web Page Image Analyzer. Simply input the web page URL, and let our tool provide you with valuable insights to enhance your online presence.
+                </h3>
                 <div class="audit__testCase">
                     <div id="audit__form" class="article__seo-search audit__form free-trial-form" action="">
                         <span class="error"></span>
                         <label for="siteAuditForm" class="sr-only">Domain entry form for site analysis.</label>
                         <input id="siteAuditForm" name="url" type="text" placeholder="Enter your domain" required>
-                        <button type="submit" onclick="postData('en')">
-                            <span>Look for Broken Links</span>
+                        <button type="submit" onclick="checkImages('en')">
+                            <span>Analyze your images</span>
                             <span></span>
                         </button>
                       </div>
@@ -131,67 +134,50 @@
             <div class="page-desc s0" id="message">
               <span class="mlink">Please introduce you URL</span>
             </div>
-            <div class="img-wrap">
-              <div class="loading-container s2" id="bar">
-                <div class="loading-bar s2" id="progress-bar"></div>
-              </div>
-            </div>
-        </div>
-        <div class="wrapper">
-          <div class="page-desc s3" id="m2">
-            <span class="mlink">We are reviewing all the links found in the URL.</span>
-            <span class="mlink">This might take a few seconds.</span>
-          </div>
         </div>
     </section>
-
-    <section class="results s1" id="results">
-        <div class="wrapper">
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">
-                    Broken Links
-                  </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">
-                    Total Links
-                  </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="messages-tab" data-bs-toggle="tab" data-bs-target="#messages" type="button" role="tab" aria-controls="messages" aria-selected="false">
-                    Link Types
-                  </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="settings-tab" data-bs-toggle="tab" data-bs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">
-                    Issue Types
-                  </button>
-                </li>
-              </ul>
-              
-              <div class="tab-content">
-                <div id="loader" class="loader"></div>
-                <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                    <ul class="list-group" id="resultados"></ul>
-                </div>
-                <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                    <div class="alert alert-warning" role="alert">
-                        This results are not available for you at the moments!
-                    </div>
-                </div>
-                <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">
-                    <div class="alert alert-warning" role="alert">
-                        This results are not available for you at the moments!
-                    </div>
-                </div>
-                <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">
-                    <div class="alert alert-warning" role="alert">
-                        This results are not available for you at the moments!
-                    </div>
-                </div>
-              </div>
+    <section class="main-screen ">
+      <div class="wrapper">
+        <div class="p-4 code-to-copy page-desc s1" id="loader">
+          <div class="spinner-grow text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <div class="spinner-grow text-secondary" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <div class="spinner-grow text-success" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <div class="spinner-grow text-info" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <div class="spinner-grow text-warning" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <div class="spinner-grow text-danger" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
         </div>
+        <div class="card shadow-none border border-300 my-4 s2" data-component-card="data-component-card" id="resul">
+          <div class="card-header p-4 border-bottom border-300 bg-soft">
+            <div class="row g-3 justify-content-between align-items-center">
+              <div class="col-12 col-md">
+                <h4 class="text-900 mb-0" data-anchor="data-anchor" id="basic-example">Search Results<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#basic-example" style="padding-left: 0.375em;"></a></h4>
+              </div>
+            </div>
+          </div>
+          <div class="card-body p-0">
+            <div class="p-4 code-to-copy">
+              <p>
+                <a class="btn btn-phoenix-secondary mt-2 collapsed mlink" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" id="quantity"></a>
+              </p>
+              <div class="collapse" id="collapseExample" >
+                <div id="resultados"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 </main>
 <footer class="bd-footer py-4 py-md-5 mt-5 bg-body-tertiary">
@@ -211,11 +197,13 @@
           </li>
           <li class="mb-2">Welcome to BustedWeb—empowering developers, one tool at a time.</li>
         </ul>
+        <p>© 2023 Busted web · <a href="https://bustedweb.me/privacy.html">Privacy</a> </p>
       </div>
       <div class="col-6 col-lg-2 offset-lg-1 mb-3">
         <h5>Tools</h5>
         <ul class="list-unstyled">
-          <li class="mb-2"><a href="/">NoBrokenLinks</a></li>
+          <li class="mb-2"><a href="https://bustedweb.me">NoBrokenLinks</a></li>
+          <li class="mb-2"><a href="https://bustedweb.me/imganalyzer.html">Image Analyzer</a></li>
         <!--   
           <li class="mb-2"><a href="/docs/5.3/">Docs</a></li>
           <li class="mb-2"><a href="/docs/5.3/examples/">Examples</a></li>
@@ -263,9 +251,10 @@
           --> 
       </div>
     </div>
+    <p>Coded and maintained by <a href="https://www.linkedin.com/in/obedvega/" class="mlink" target="_blank">Obed Vega</a> </p>
   </div>
 </footer>
-<script src="js/scripts.js"></script>
+<script src="js/imga.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
 <script src="https://getbootstrap.com/docs/5.3/dist/js/bootstrap.bundle.min.js"></script>

@@ -25,7 +25,12 @@ async function checkImages(lan) {
       let listItems = resultado.map(res => {
         let cantidad = resultado.length;
         console.log(cantidad);
-        cantidadElemento.textContent = `We found ${cantidad} images, click here to see the results`;
+        if (cantidad === 0){
+          cantidadElemento.textContent = `We didn't find any images`;
+        }else{
+          cantidadElemento.textContent = `We found ${cantidad} images, click here to see the results`;
+        }
+        
         let { src, alt, title } = res;
 
         return `

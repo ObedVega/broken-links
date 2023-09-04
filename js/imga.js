@@ -4,6 +4,7 @@ async function checkImages(lan) {
   var r = document.getElementById("resul");
   var mensaje = document.getElementById("message");
   var url = document.getElementById("siteAuditForm").value;
+  mensaje.classList.add("s0");
   console.log(url);
   let api = `https://api.bustedweb.me/img/${url}/`
   console.log(api);
@@ -22,12 +23,10 @@ async function checkImages(lan) {
       let resultado = data;
       let listGroup = document.getElementById("resultados");
       let cantidadElemento = document.getElementById("quantity");
+      cantidadElemento.textContent = `We didn't find any images`;
       let listItems = resultado.map(res => {
         let cantidad = resultado.length;
-        console.log(cantidad);
-        if (cantidad !== null){
-          cantidadElemento.textContent = `We didn't find any images`;
-        }else{
+        if (cantidad !== 0 ){
           cantidadElemento.textContent = `We found ${cantidad} images, click here to see the results`;
         }
         
@@ -64,6 +63,7 @@ async function checkImages(lan) {
     });
   }else{
       mensaje.classList.remove("s0");
+      laoder.classList.add("s1");
     }
 
 }

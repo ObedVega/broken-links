@@ -83,11 +83,14 @@ async function startLoading() {
         issue = '查看问题';
         break;
       case 'de':
-          issue = 'Problem anzeigen';
-          break;
+        issue = 'Problem anzeigen';
+        break;
       case 'kr':
-            issue = '이슈 보기';
-            break;        
+        issue = '이슈 보기';
+        break;  
+      case 'ua':
+        issue = 'проблема';
+        break;           
       default:
         issue = 'View issue'
     }

@@ -108,7 +108,7 @@ async function startLoading() {
         return `
           <li class="list-group-item listext">
             <span class="reddot"></span>
-            <span class="textrs"><a href="${ruta}">${ruta}</a></span>
+            <span class="textrs"><a href="${ruta}" target="_blank">${ruta}</a></span>
             <span class="mlink"> &nbsp;  &nbsp; ${status}</span>
             <span class="flex-spacer"></span>
             <button type="button" class="btn btn-outline-danger" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">

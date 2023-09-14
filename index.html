@@ -65,44 +65,56 @@
     <meta property="twitter:description" content="A broken link on your website can negatively affect user experience and SEO." />
     <meta property="twitter:image" content="https://raw.githubusercontent.com/ObedVega/broken-links/main/img/logo.jpg" />
     
-    <link href="https://getbootstrap.com/docs/5.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
  
     <style>
-      .dropdown-menu[data-bs-popper] {
-        left: -100px;
-      }
+  
     </style>
   </head>
 <body class="front__page">
-    <nav class="navbar navbar-light" style="background-color: #14253f;">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="https://bustedweb.me/">
-                <img src="img/bustedweb.png" width="150px" height="44.92px" alt="logo" title="logo">
+  <header class="p-3 mb-3 border-bottom" style="background-color: #212529;">
+    <div class="container-fluid">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a class="navbar-brand" href="https://bustedweb.me/">
+          <img src="img/bustedweb.png" width="150px" height="44.92px" alt="logo" title="logo">
+        </a>
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="https://bustedweb.me" title="NoBrokenLinks" class="nav-link px-2 link-body-emphasis text-white">NoBrokenLinks</a></li>
+          <span class="nav-link text-white">|</span> 
+          <li><a href="https://bustedweb.me/imganalyzer" title="Image Analyzer" class="nav-link px-2 link-body-emphasis text-white">Image Analyzer</a></li>
+        </ul>
+<!--
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+          <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+        </form>
+-->
+        <div class="dropdown text-end">
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+            <a href="#" class="nav-link active d-block text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa fa-solid fa-globe"></i> Language
             </a>
-            <div class="flex-shrink-0 dropdown">
-              <ul class="nav nav-pills">
-                <li class="nav-item">
-                <a href="#" class="nav-link active d-block text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                  <i class="fa fa-solid fa-globe"></i> English
-                </a>
-                <ul class="dropdown-menu text-small shadow">
-                  <li><a class="dropdown-item" href="https://bustedweb.me/" title="en">English</a></li>
-                  <li><a class="dropdown-item" href="https://bustedweb.me/es/" title="es">Español</a></li>
-                  <li><a class="dropdown-item" href="https://bustedweb.me/ja/" title="ja">日本</a></li>
-                  <li><a class="dropdown-item" href="https://bustedweb.me/fr/" title="fr">Français</a></li>
-                  <li><a class="dropdown-item" href="https://bustedweb.me/cn/" title="cn">中国</a></li>
-                  <li><a class="dropdown-item" href="https://bustedweb.me/de/" title="de">Deutsch</a></li>
-                  <li><a class="dropdown-item" href="https://bustedweb.me/kr/" title="kr">대한민국</a></li>
-                  <li><a class="dropdown-item" href="https://bustedweb.me/ua/" title="ua">Українська</a></li>
-                </ul>
-                </li>
-              </ul>
-            </div>
+            <ul class="dropdown-menu text-small shadow">
+              <li><a class="dropdown-item active" href="https://bustedweb.me/" title="en">English</a></li>
+              <li><a class="dropdown-item" href="https://bustedweb.me/es/" title="es">Español</a></li>
+              <li><a class="dropdown-item" href="https://bustedweb.me/ja/" title="ja">日本</a></li>
+              <li><a class="dropdown-item" href="https://bustedweb.me/fr/" title="fr">Français</a></li>
+              <li><a class="dropdown-item" href="https://bustedweb.me/cn/" title="cn">中国</a></li>
+              <li><a class="dropdown-item" href="https://bustedweb.me/de/" title="de">Deutsch</a></li>
+              <li><a class="dropdown-item" href="https://bustedweb.me/kr/" title="kr">대한민국</a></li>
+              <li><a class="dropdown-item" href="https://bustedweb.me/ua/" title="ua">Українська</a></li>
+            </ul>
+            </li>
+          </ul>
         </div>
-    </nav>
+      </div>
+    </div>
+  </header>
+
 <main class="landing-sc-page">
     <section class="message">
         <div class="wrapper">
@@ -206,12 +218,6 @@
   <div class="container py-4 py-md-5 px-4 px-md-3 text-body-secondary">
     <div class="row">
       <div class="col-lg-3 mb-3">
-        <!-- 
-        <a class="d-inline-flex align-items-center mb-2 text-body-emphasis text-decoration-none" href="/" aria-label="Bootstrap">
-          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="d-block me-2" viewBox="0 0 118 94" role="img"><title>Bootstrap</title><path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z" fill="currentColor"></path></svg>
-          <span class="fs-5">Bootstrap</span>
-        </a>
-        -->
         <img src="img/bustedweb.JPG" alt="bustedweb" title="bustedweb" width="150px" height="44.92px">
         <ul class="list-unstyled small">
           <li class="mb-2">
@@ -226,50 +232,17 @@
         <ul class="list-unstyled">
           <li class="mb-2"><a href="https://bustedweb.me">NoBrokenLinks</a></li>
           <li class="mb-2"><a href="https://bustedweb.me/imganalyzer">Image Analyzer</a></li>
-          <!--   
-          <li class="mb-2"><a href="/docs/5.3/examples/">Examples</a></li>
-          <li class="mb-2"><a href="https://icons.getbootstrap.com/">Icons</a></li>
-          <li class="mb-2"><a href="https://themes.getbootstrap.com/">Themes</a></li>
-          <li class="mb-2"><a href="https://blog.getbootstrap.com/">Blog</a></li>
-          <li class="mb-2"><a href="https://cottonbureau.com/people/bootstrap" target="_blank" rel="noopener">Swag Store</a></li>
-        -->  
+
         </ul>
       </div>
       <div class="col-6 col-lg-2 mb-3">
-           <!--   
-        <h5>Guides</h5>
-        <ul class="list-unstyled">
-          <li class="mb-2"><a href="/docs/5.3/getting-started/">Getting started</a></li>
-          <li class="mb-2"><a href="/docs/5.3/examples/starter-template/">Starter template</a></li>
-          <li class="mb-2"><a href="/docs/5.3/getting-started/webpack/">Webpack</a></li>
-          <li class="mb-2"><a href="/docs/5.3/getting-started/parcel/">Parcel</a></li>
-          <li class="mb-2"><a href="/docs/5.3/getting-started/vite/">Vite</a></li>
-        </ul>
-         -->  
+
       </div>
       <div class="col-6 col-lg-2 mb-3">
-          <!--  
-        <h5>Projects</h5>
-        <ul class="list-unstyled">
-          <li class="mb-2"><a href="https://github.com/twbs/bootstrap" target="_blank" rel="noopener">Bootstrap 5</a></li>
-          <li class="mb-2"><a href="https://github.com/twbs/bootstrap/tree/v4-dev" target="_blank" rel="noopener">Bootstrap 4</a></li>
-          <li class="mb-2"><a href="https://github.com/twbs/icons" target="_blank" rel="noopener">Icons</a></li>
-          <li class="mb-2"><a href="https://github.com/twbs/rfs" target="_blank" rel="noopener">RFS</a></li>
-          <li class="mb-2"><a href="https://github.com/twbs/examples/" target="_blank" rel="noopener">Examples repo</a></li>
-        </ul>
-          --> 
+
       </div>
       <div class="col-6 col-lg-2 mb-3">
-         <!--  
-        <h5>Community</h5>
-        <ul class="list-unstyled">
-          <li class="mb-2"><a href="https://github.com/twbs/bootstrap/issues" target="_blank" rel="noopener">Issues</a></li>
-          <li class="mb-2"><a href="https://github.com/twbs/bootstrap/discussions" target="_blank" rel="noopener">Discussions</a></li>
-          <li class="mb-2"><a href="https://github.com/sponsors/twbs" target="_blank" rel="noopener">Corporate sponsors</a></li>
-          <li class="mb-2"><a href="https://opencollective.com/bootstrap" target="_blank" rel="noopener">Open Collective</a></li>
-          <li class="mb-2"><a href="https://stackoverflow.com/questions/tagged/bootstrap-5" target="_blank" rel="noopener">Stack Overflow</a></li>
-        </ul>
-          --> 
+
       </div>
     </div>
     <p>Coded and maintained by <a href="https://www.linkedin.com/in/obedvega/" class="mlink" target="_blank">Obed Vega</a> </p>
@@ -277,10 +250,7 @@
 </footer>
 <script src="js/check.js"></script>
 <script src="js/scripts.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
-<script src="https://getbootstrap.com/docs/5.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/dist/js/bootstrap.bundle.min.js"></script>
 
-<script type="text/javascript"> var infolinks_pid = 3404520; var infolinks_wsid = 0; </script> <script type="text/javascript" src="//resources.infolinks.com/js/infolinks_main.js"></script>
 </body>
 </html>
